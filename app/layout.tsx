@@ -1,3 +1,5 @@
+// Added React import to provide the React namespace for types like React.ReactNode
+import React from "react";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
+// Fix: Ensure React namespace is available for React.ReactNode
 export default function RootLayout({
   children,
 }: Readonly<{
