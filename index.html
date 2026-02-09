@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stratpace Advisory</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                900: '#0B1C2D',
+                800: '#12263A',
+                700: '#1B3A57',
+              },
+              gold: {
+                600: '#C9A24D',
+              },
+              background: '#F8FAFC',
+              muted: '#F1F5F9',
+              border: '#E2E8F0',
+              body: '#1F2937',
+              'muted-text': '#64748B',
+            },
+            fontFamily: {
+              sora: ['Sora', 'sans-serif'],
+            },
+            transitionDuration: {
+              '250': '250ms',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Sora', sans-serif;
+        background-color: #F8FAFC;
+        color: #0B1C2D;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Custom scrollbar for editorial feel */
+      ::-webkit-scrollbar {
+          width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+          background: #cbd5e1; 
+          border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+          background: #94a3b8; 
+      }
+      /* Custom Selection Style */
+      ::selection {
+        background-color: #C9A24D; /* Brand Gold */
+        color: #0B1C2D; /* Brand Navy */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "next/": "https://esm.sh/next@^16.1.6/",
+    "next": "https://esm.sh/next@^16.1.6",
+    "tailwindcss": "https://esm.sh/tailwindcss@^4.1.18",
+    "@tailwindcss/typography": "https://esm.sh/@tailwindcss/typography@^0.5.19",
+    "sanity": "https://esm.sh/sanity@^5.8.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
